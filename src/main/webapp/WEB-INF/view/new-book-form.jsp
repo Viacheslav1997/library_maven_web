@@ -19,6 +19,7 @@
 
 <form:form action="newBook" modelAttribute="book">
 
+                <form:hidden path="id"/>
     Название:    <form:input path="book" /> <br><br>
     Автор:       <form:input path="author" /><br><br>
     Год издания: <form:input path="year" /><br><br>

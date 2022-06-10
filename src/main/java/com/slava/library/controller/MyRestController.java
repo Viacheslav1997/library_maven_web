@@ -60,14 +60,27 @@ public class MyRestController {
 
     @RequestMapping("/newBookForm")
     public String newBookForm(Model model){
+
         Book newBook = new Book();
         model.addAttribute("book", newBook);
+
+        return "new-book-form";
+    }
+
+    @RequestMapping("/updateBook")
+    public String updateBook(@RequestParam("bookId") int id, Model model){
+
+
+        Book newBook = bookService.getById(id);
+        model.addAttribute("book", newBook);
+
         return "new-book-form";
     }
 
     @RequestMapping("/newBook")
     public String newBook(@ModelAttribute("book") Book book){
 
+        System.out.println(book.getId());
         bookService.save(book);
 
         return "redirect:/books";

@@ -59,6 +59,10 @@
             <c:param name="bookId" value = "${book.id}"/>
         </c:url>
 
+        <c:url var = "editButton" value="/updateBook">
+            <c:param name="bookId" value = "${book.id}"/>
+        </c:url>
+
         <tr>
             <td> ${book.id} </td>
             <td> ${book.book} </td>
@@ -75,6 +79,10 @@
 
                 <input type="button" value="Удалить"
                        onclick="window.location.href = '${deleteButton}'"/>
+
+                <input type="button" value="Редактировать"
+                       onclick="window.location.href = '${editButton}'"/>
+
 
             </td>
         </tr>
