@@ -58,6 +58,19 @@ public class MyRestController {
         return "redirect:/books";
     }
 
+    @RequestMapping("/newBookForm")
+    public String newBookForm(Model model){
+        Book newBook = new Book();
+        model.addAttribute("book", newBook);
+        return "new-book-form";
+    }
 
+    @RequestMapping("/newBook")
+    public String newBook(@ModelAttribute("book") Book book){
+
+        bookService.save(book);
+
+        return "redirect:/books";
+    }
 
 }

@@ -10,18 +10,31 @@
 <html>
 <head>
     <title>Библиотека</title>
+    <style>
+        input[type=delete] {
+            background-color: #B22222;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
-<center><h2>Библиотека</h2></center>
+<h2>Библиотека</h2>
 <br>
-<center>Здесь вы можете просмотреть список имеющихся в библиотеке книг, </center>
+Здесь вы можете просмотреть список имеющихся в библиотеке книг,
 
-<center>а также доступное их количество. </center>
+а также доступное их количество.
 <br>
-<center>Вы можете взять или вернуть книгу, а так же удалить книгу из доступа. </center>
-<br>
-<center><table border="1">
+Вы можете взять или вернуть книгу, а так же удалить книгу из доступа или пополнить библиотеку новой книгой.
+<br><br>
+<c:url var = "newButton" value="/newBookForm"></c:url>
+<input type="button" value="Добавить книгу"
+       onclick="window.location.href = '${newButton}'"/> - открыть форму для поплнения базы библиотеки.
+<br><br>
+
+
+
+    <table border="1">
 
     <tr>
         <th> Id: </th>
@@ -54,7 +67,7 @@
             <td> ${book.quantity} </td>
             <td>
 
-                <input type="button" value="Вернуть" c
+                <input type="button" value="Вернуть"
             onclick="window.location.href = '${returnButton}'"/>
 
                 <input type="button" value="Взять"
@@ -68,7 +81,7 @@
 
     </c:forEach>
 
-</table></center>
+</table>
 
 
 </body>
