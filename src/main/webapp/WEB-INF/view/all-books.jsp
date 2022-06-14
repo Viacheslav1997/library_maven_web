@@ -10,6 +10,8 @@
 <html>
 <head>
     <title>Библиотека</title>
+    <%@ page isELIgnored="false" %>
+<%--    //Нужно включить для отображения данных из модели--%>
     <style>
         input[type=delete] {
             background-color: #B22222;

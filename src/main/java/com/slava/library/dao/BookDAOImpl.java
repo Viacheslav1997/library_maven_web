@@ -31,6 +31,7 @@ public class BookDAOImpl implements BookDAO{
     public void save(Book book) {
 
         Session session = sessionFactory.getCurrentSession();
+        System.out.println("DAO save(): " + book);
         session.saveOrUpdate(book);
 
     }

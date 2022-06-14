@@ -10,6 +10,8 @@
 <html>
 <head>
     <title>Добавить книгу</title>
+    <%@ page isELIgnored="false" %>
+<%--    //Нужно включить для отображения данных из модели--%>
 </head>
 <body>
 
