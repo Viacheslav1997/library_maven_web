@@ -9,17 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21108393-fac2-4143-8873-b24a52892ce0" name="Changes" comment="Добавлена кнопка добавления новой книги&#10;Добавлин фильтр для форм на кириллице&#10;Добавлена страничка формы добавления новой книги">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/slava/library/config/MyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/slava/library/config/MyWebInitializer.java" afterDir="false" />
+    <list default="true" id="21108393-fac2-4143-8873-b24a52892ce0" name="Changes" comment="Конфиурация с помощью классов">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/REST.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slava/library/controller/MyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/slava/library/dao/BookDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/slava/library/dao/BookDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/slava/library/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/slava/library/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/slava/library/controller/MyRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/slava/library/controller/MyRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/all-books.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/all-books.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/new-book-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/new-book-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,15 +65,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Вячеслав/IdeaProjects/Spring Boot/library_maven_web/src/main/webapp&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Вячеслав/IdeaProjects/Spring Boot/library_maven_web/src/main/webapp",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.5448276",
+    "spring.configuration.checksum": "c87ff095418d146621fde9116c07ee8e"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Вячеслав\IdeaProjects\Spring Boot\library_maven_web\src\main\webapp" />
@@ -189,7 +190,9 @@
       <updated>1654849453574</updated>
       <workItem from="1654849456042" duration="130000" />
       <workItem from="1654849601973" duration="10998000" />
-      <workItem from="1655205119296" duration="3175000" />
+      <workItem from="1655205119296" duration="5304000" />
+      <workItem from="1655211865992" duration="471000" />
+      <workItem from="1655286891126" duration="1277000" />
     </task>
     <task id="LOCAL-00001" summary="Files added&#10;Controller created&#10;Main page created">
       <created>1654855526869</created>
@@ -205,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654858678959</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Конфиурация с помощью классов">
+      <created>1655208603414</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655208603414</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +235,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Files added&#10;Controller created&#10;Main page created" />
     <MESSAGE value="Добавлена кнопка добавления новой книги&#10;Добавлин фильтр для форм на кириллице&#10;Добавлена страничка формы добавления новой книги" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена кнопка добавления новой книги&#10;Добавлин фильтр для форм на кириллице&#10;Добавлена страничка формы добавления новой книги" />
+    <MESSAGE value="Конфиурация с помощью классов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Конфиурация с помощью классов" />
   </component>
 </project>

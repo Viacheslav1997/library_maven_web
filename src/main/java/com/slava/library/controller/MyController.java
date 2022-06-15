@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-public class MyRestController {
+public class MyController {
 
     @Autowired
     private BookService bookService;
@@ -45,6 +45,9 @@ public class MyRestController {
 
         Book book = bookService.getById(id);
         book.setQuantity(book.getQuantity() - 1);
+        if(book.getQuantity() < 0) {
+            book.setQuantity(0);
+        }
         bookService.save(book);
 
         return "redirect:/books";

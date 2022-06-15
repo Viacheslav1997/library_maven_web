@@ -1,0 +1,5 @@
+GET     api/books/  -       получить все книги
+GET     api/books/{id}  -   получить книгу по ID
+POST    api/books/  -       добавить новую книгу
+PUT     api/books/  -       изменение книги
+DELETE  api/books/{id}  -   удаление книги по ID

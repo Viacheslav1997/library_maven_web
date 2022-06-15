@@ -12,12 +12,7 @@
     <title>Библиотека</title>
     <%@ page isELIgnored="false" %>
 <%--    //Нужно включить для отображения данных из модели--%>
-    <style>
-        input[type=delete] {
-            background-color: #B22222;
-            color: white;
-        }
-    </style>
+
 </head>
 <body>
 
@@ -28,10 +23,7 @@
 а также доступное их количество.
 <br>
 Вы можете взять или вернуть книгу, а так же удалить книгу из доступа или пополнить библиотеку новой книгой.
-<br><br>
-<c:url var = "newButton" value="/newBookForm"></c:url>
-<input type="button" value="Добавить книгу"
-       onclick="window.location.href = '${newButton}'"/> - открыть форму для поплнения базы библиотеки.
+
 <br><br>
 
 
@@ -92,7 +84,10 @@
     </c:forEach>
 
 </table>
-
+<br>
+<c:url var = "newButton" value="/newBookForm"></c:url>
+<input type="button" value="Добавить книгу"
+       onclick="window.location.href = '${newButton}'"/> - открыть форму для поплнения базы библиотеки.
 
 </body>
 </html>
