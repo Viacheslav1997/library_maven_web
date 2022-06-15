@@ -9,13 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21108393-fac2-4143-8873-b24a52892ce0" name="Changes" comment="Конфиурация с помощью классов">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/REST.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/slava/library/controller/MyController.java" afterDir="false" />
+    <list default="true" id="21108393-fac2-4143-8873-b24a52892ce0" name="Changes" comment="Добавлена зависимость для json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/slava/library/controller/MyRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/slava/library/controller/MyRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/all-books.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/all-books.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/slava/library/controller/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/slava/library/controller/ThisRestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +188,7 @@
       <workItem from="1654849601973" duration="10998000" />
       <workItem from="1655205119296" duration="5304000" />
       <workItem from="1655211865992" duration="471000" />
-      <workItem from="1655286891126" duration="1277000" />
+      <workItem from="1655286891126" duration="3304000" />
     </task>
     <task id="LOCAL-00001" summary="Files added&#10;Controller created&#10;Main page created">
       <created>1654855526869</created>
@@ -215,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655208603414</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="REST Controller added">
+      <created>1655288411984</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655288411984</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Добавлена зависимость для json">
+      <created>1655289232032</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655289232032</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +246,8 @@
     <MESSAGE value="Files added&#10;Controller created&#10;Main page created" />
     <MESSAGE value="Добавлена кнопка добавления новой книги&#10;Добавлин фильтр для форм на кириллице&#10;Добавлена страничка формы добавления новой книги" />
     <MESSAGE value="Конфиурация с помощью классов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Конфиурация с помощью классов" />
+    <MESSAGE value="REST Controller added" />
+    <MESSAGE value="Добавлена зависимость для json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена зависимость для json" />
   </component>
 </project>
